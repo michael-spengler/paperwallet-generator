@@ -1,5 +1,5 @@
 body {
-	background-color: #ffffff;
+	background-color: black;
 	font-size: 15px;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -113,9 +113,9 @@ a {
     margin: 1.3em 0 0;
     cursor: pointer;
     -webkit-appearance: none;
-    background: #0cd3bc;
+    background: black
 }
 
 .b1:hover {
-	background-color: #27dfc9;
+	background-color: black;
   }
