@@ -1,0 +1,96 @@
+body {
+    color: #565656;
+    padding: 2px;
+    font-family:Lato,sans-serif;
+    /* background:linear-gradient(140deg,#0ff0b3,#036ed9) fixed; */
+    background: black;
+}
+
+#container {
+    margin: auto;
+    max-width: 600px;
+    padding: 1.5em 1.5em;
+    background-color: #fff;
+    margin-top: 2em;
+    box-shadow: 1px 5px 10px rgb(0 0 0 / 15%);
+    transition: box-shadow .2s ease-in-out;
+}
+
+#footer {
+    margin: auto;
+    background-color: #fff;
+    margin-top: 2em;
+    padding: 1em 1em;
+    box-shadow: 1px 5px 10px rgb(0 0 0 / 15%);
+    transition: box-shadow .2s ease-in-out;
+    text-align:center;
+    font-family: Lato,sans-serif;
+}
+
+#title {
+    color:#fff;
+    padding-top: 0px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin-top: 1em;
+}
+
+#titleLabel {
+    font-size: 16px;
+    text-align: center;
+}
+
+a {
+    color: black;
+}
+
+#searchInput {
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+#searchOL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-height: 400px;
+    overflow: auto;
+}
+
+#searchOL li a {
+    border: 1px solid #ddd;
+    margin-top: -1px;
+    background-color: #ffffff;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+}
+
+#searchOL li a:hover:not(.header) {
+    background-color: black;
+}
+
+@media only screen and (max-width: 640px) {
+    #buttons {
+        text-align: center;
+    }
+}
+
+input {
+text-align: center;
+}
+
+.ethereum {
+    position: relative;
+    display: none;
+}

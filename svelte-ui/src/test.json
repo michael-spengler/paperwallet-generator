@@ -1,0 +1,19 @@
+{
+    "provider": null,
+    "address": "0xeF83De0a5eAF3be27EB90E7B5dA3bD6c27006218",
+    "publicKey": "0x0395698e1b4e9058a24fa6ac383112651855cc31571c4e6710be9cb4647ce2a903",
+    "fingerprint": "0x5a3775ea",
+    "parentFingerprint": "0x3120049b",
+    "mnemonic": {
+        "phrase": "earn burger fiber episode become draft club rough main runway goddess order",
+        "password": "",
+        "wordlist": {
+            "locale": "en"
+        },
+        "entropy": "0x4543d556a5f13e83cb0de28657ad90ce"
+    },
+    "chainCode": "0x5d2c24efbb47106f6d49ea8ea18cd87c10e837b9eb55dc984aa1bd77a698c187",
+    "path": "m/44'/60'/0'/0/0",
+    "index": 0,
+    "depth": 5
+}
