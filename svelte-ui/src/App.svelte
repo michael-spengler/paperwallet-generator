@@ -79,32 +79,33 @@
 
 	<div class="center">
 		{#if ready}
-			{#each walletInfos as wi}
-			<a href="https://cultmagazine.org" target="_blank">
-				<h4>cultmagazine.org</h4>
-			</a>
-			<div class="small">
-			<b>
-				Public Key (Share):
-			</b>
-				{wi.publicKey} <br />
-				<canvas id={wi.canvasIDPublicKey} />
-				<p></p>
-				<b> Private Key (do not share): </b>
-					{wi.privateKey} <br />
-				<b> Mnemonic (do not share): </b>
-					{wi.mnemonic}
-					<br />
-					
-					
-					<canvas id={wi.canvasIDPrivateKey} />
+			{#each walletInfos as wi, index}
+
+			
+				<div class={((index%2)===0 && index>1)?"pageBreak":"relax"}>
+					<a href="https://cultmagazine.org" target="_blank">
+						<h4>cultmagazine.org</h4>
+					</a>
+					<div class="small">
+						<b> Public Key (Share): </b>
+						{wi.publicKey} <br />
+						<canvas id={wi.canvasIDPublicKey} />
+						<p />
+						<b> Private Key (do not share): </b>
+						{wi.privateKey} <br />
+						<b> Mnemonic (do not share): </b>
+						{wi.mnemonic}
+						<br />
+
+						<canvas id={wi.canvasIDPrivateKey} />
+					</div>
 				</div>
 			{/each}
 		{/if}
 		{#if walletInfos.length === amountOfWallets}
-		<div class="noprint">
-			<button class="b1" onclick="window.print()">Print</button>
-		</div>
+			<div class="noprint">
+				<button class="b1" onclick="window.print()">Print</button>
+			</div>
 		{/if}
 	</div>
 </main>
@@ -124,11 +125,12 @@
 		font-weight: 100;
 	}
 
-	.small{
+	.small {
 		margin-left: 0;
 		padding-left: 0;
 		font-size: 9px;
 	}
+
 	@media (min-width: 640px) {
 		main {
 			max-width: none;
@@ -139,5 +141,9 @@
 		.noprint {
 			display: none;
 		}
+
+		.pageBreak {
+			page-break-before:always
+		} /* page-break-after works, as well */
 	}
 </style>
