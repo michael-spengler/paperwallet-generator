@@ -66,23 +66,25 @@
 </script>
 
 <main>
-	<div class="noprint">
-		<h1>Paperwallet Generator</h1>
+	{#if !ready}
+		<div class="noprint">
+			<h1>Paperwallet Generator</h1>
 
-		How many wallets do you want to generate?
-		<p />
-		<div class="center">
-			<input type="number" bind:value={amountOfWallets} />
-			<button on:click={generateAll}>generate</button>
+			How many wallets do you want to generate?
+			<p />
+			<div class="center">
+				<input type="number" bind:value={amountOfWallets} />
+				<button on:click={generateAll}>generate</button>
+			</div>
 		</div>
-	</div>
+	{/if}
 
 	<div class="center">
 		{#if ready}
 			{#each walletInfos as wi, index}
-
-			
-				<div class={((index%2)===0 && index>1)?"pageBreak":"relax"}>
+				<div
+					class={index % 2 === 0 && index > 1 ? "pageBreak" : "relax"}
+				>
 					<a href="https://cultmagazine.org" target="_blank">
 						<h4>cultmagazine.org</h4>
 					</a>
@@ -102,11 +104,26 @@
 				</div>
 			{/each}
 		{/if}
-		{#if walletInfos.length === amountOfWallets}
-			<div class="noprint">
-				<button class="b1" onclick="window.print()">Print</button>
-			</div>
-		{/if}
+		<div class="noprint">
+			{#if walletInfos.length === amountOfWallets}
+				<div class="noprint">
+					<p></p>
+					<button class="b1" onclick="window.print()">Print Paperwallets</button>
+					<p />
+					<button class="b1" onclick="window.location.reload()"
+						>Reload Page</button
+					>
+				</div>
+
+				<p><br /></p>
+				Generated public wallet addresses:
+				<p />
+				{#each walletInfos as wiForList}
+					{wiForList.publicKey} <br>
+				{/each}
+			{/if}
+			<p><br></p>
+		</div>
 	</div>
 </main>
 
@@ -143,7 +160,7 @@
 		}
 
 		.pageBreak {
-			page-break-before:always
+			page-break-before: always;
 		} /* page-break-after works, as well */
 	}
 </style>
