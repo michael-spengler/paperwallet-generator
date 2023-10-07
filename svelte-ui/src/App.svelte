@@ -68,7 +68,7 @@
 <main>
 	{#if !ready}
 		<div class="noprint">
-			<h1>Paperwallet Generator</h1>
+			<h3>Paperwallet Generator</h3>
 
 			How many wallets do you want to generate?
 			<p />
@@ -135,11 +135,11 @@
 		margin: 0 auto;
 	}
 
-	h1 {
+	h3 {
 		/* color: #ff3e00; */
 		color: rgb(10, 156, 235);
 		text-transform: uppercase;
-		font-size: 4em;
+		font-size: 2em;
 		font-weight: 100;
 	}
 
