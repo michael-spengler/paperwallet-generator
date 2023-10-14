@@ -85,8 +85,10 @@
 				<div
 					class={index % 2 === 0 && index > 1 ? "pageBreak" : "relax"}
 				>
-					<a href="https://cultmagazine.org" target="_blank">
-						<h4>cultmagazine.org</h4>
+					<!-- <a href="https://cultmagazine.org" target="_blank"> -->
+						<!-- <h4>cultmagazine.org</h4> -->
+						<a href="https://freeme.energy" target="_blank">
+						<h4>FreeMe.Energy</h4>
 					</a>
 					<div class="small">
 						<b> Public Key (Share): </b>
