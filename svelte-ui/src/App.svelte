@@ -139,7 +139,7 @@
 
 	h3 {
 		/* color: #ff3e00; */
-		color: rgb(10, 156, 235);
+		color: rgb(1, 111, 1);
 		text-transform: uppercase;
 		font-size: 2em;
 		font-weight: 100;
