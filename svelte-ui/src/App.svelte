@@ -89,8 +89,13 @@
 						<!-- <h4>cultmagazine.org</h4> -->
 						<a href="https://FreedomCash.org" target="_blank">
 						<h4>FreedomCash.org</h4>
+						
 					</a>
 					<div class="small">
+						Congratulations. You have found a Freedom Cash Paperwallet.
+						<br>
+						https://zkevm.polygonscan.com/token/0xa1e7bB978a28A30B34995c57d5ba0B778E90033B
+						<p></p>
 						<b> Public Key (Share): </b>
 						{wi.publicKey} <br />
 						<canvas id={wi.canvasIDPublicKey} />
@@ -132,9 +137,9 @@
 <style>
 	main {
 		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
 		padding: 0em;
-		max-width: 240px;
-		margin: 0 auto;
 	}
 
 	h3 {
